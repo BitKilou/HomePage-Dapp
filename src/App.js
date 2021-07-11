@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import SimpleStorageContract from "./contracts/SimpleStorage.json";
 import getWeb3 from "./getWeb3";
-import NavBar from "./Components/NavBar/NavBar";
-import NavBarDetail from "./Components/NavBarDetail/NavBarDetail";
-import Search from "./Components/Search/Search";
-import NFT from "./Components/NFT/NFT";
+import { BrowserRouter as Router } from 'react-router-dom';
 import "./App.css";
+import Routes from './Routes'
 
 class App extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null };
@@ -56,15 +54,9 @@ class App extends Component {
   render() {
    
     return (
-      <div className="App">
-        <NavBar />
-         <h1 className="title">DigiBox, a new way to give...</h1>
-          <Search /> 
-           <h2 className="subTitle">Les DigiBox du moment</h2>
-            <NFT />
-
-        <NavBarDetail />
-      </div>
+      <Router>
+        <Routes />
+      </Router>
     );
   }
 }
