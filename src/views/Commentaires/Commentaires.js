@@ -1,11 +1,12 @@
 import React from 'react';
-//import {MemberCard} from './components'
 import "./Commentaires.css";
+import Connection from '../../Connection';
 
 export default function Commentaires() {
     return (
-        <div className="Commentaires">
-            <h1 className="title"> Retour sur votre experience.</h1>
+        <div> 
+            <h1 className="Commentaires"> Retour sur votre experience.</h1> <hr></hr>
+               <Connection />
         </div>
     )
 }

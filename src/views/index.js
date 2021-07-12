@@ -7,3 +7,5 @@ export {default as CGV} from './CGV'
 export {default as SCPresta} from './SCPresta'
 export {default as SC} from './SC'
 export {default as Commentaires} from './Commentaires'
+export {default as AchatNFT} from './AchatNFT'
+

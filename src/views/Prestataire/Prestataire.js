@@ -1,11 +1,12 @@
 import React from 'react';
-//import {MemberCard} from './components'
 import "./Prestataire.css";
+import Connection from '../../Connection';
 
 export default function Prestataire() {
     return (
         <div className="Prestataire-Prerequis">
-            <h1 className="title"> Devenir partenaire.</h1>
+            <h1 className="title"> Devenir partenaire.</h1> <hr></hr>
+             <Connection /> 
             <div className="prerequis">
             <h4> Voici les prérequis devenir un prestataire ches DigiBox:</h4>
               <ul className="liste">
